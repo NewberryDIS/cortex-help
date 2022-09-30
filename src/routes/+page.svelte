@@ -1,4 +1,5 @@
 <script>
+    export const prerender = true
     import { browser } from '$app/environment';
     import Header from '../lib/Header.svelte'
     import Nogo from '../lib/Nogo.svelte'
@@ -102,7 +103,7 @@
         colorSwitchType = type
     }
 </script>
-<Header colors={colors} {nogoColor} />
+<Header {nogoColor} />
 
 
 <Content>
@@ -274,9 +275,6 @@
         border: 1px solid black;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, 
                     rgba(0, 0, 0, 0.45) 0px 0px 5px inset;
-    }
-    h1 {
-        font-family: 'Flecha M Medium';
     }
     @font-face {
         font-family: 'Flecha M Medium';

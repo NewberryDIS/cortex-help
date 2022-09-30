@@ -14,7 +14,6 @@
   import "carbon-components-svelte/css/all.css";
 	import Nogo from "./Nogo.svelte";
   let isSideNavOpen = true;
-  export let colors
   export let nogoColor
 </script>
   
