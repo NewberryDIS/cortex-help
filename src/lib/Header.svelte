@@ -29,7 +29,8 @@
   <SideNavItems>
     <SideNavLink href="/#about" text="About" />
     <SideNavLink href="/#create-account" text="Create an account" />
-    <SideNavMenu text="Search Tips">
+    <SideNavLink href="/#favs" text="Save Favorites" />
+    <SideNavMenu text="Search &amp; Browse">
       <SideNavMenuItem href="/#refine" text="Refine with filters" />
       <SideNavMenuItem href="/#customize" text="Customize results with View &amp; Sort menu" />
       <SideNavMenuItem href="/#mods" text="Modifiers and wildcards" />

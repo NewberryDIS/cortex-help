@@ -9,7 +9,7 @@
 		"test": "playwright test",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"deploy": "node ./gh-pages.js"
+		"deploy": "gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.25.0",
@@ -27,6 +27,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.43",
-		"gh-pages": "^4.0.0"
+		"gh-pages": "^4.0.0",
+		"svelte-preprocess": "^4.10.7"
 	}
 }

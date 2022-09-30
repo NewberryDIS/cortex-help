@@ -146,16 +146,46 @@
                             Welcome to Newberry Digital Collections! This site features thousands of digitized manuscripts, maps, books, photographs, artworks, audio and video recordings, and other rare and unique materials from the collections of the Newberry, Chicago's independent research library since 1887. The content here represents only a fraction of the library's vast holdings; materials are continuously digitized and made freely available online as resources allow. To support these efforts, visit <a href="https://www.newberry.org/give">Give to the Newberry</a>.
                         </p>
                     </div>
-                    <div class="create-account">
+                    <div id="create-account">
                         <h2>
                             Create account
                         </h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias tenetur, numquam fuga dicta atque, necessitatibus dignissimos ut consequatur ipsa quas libero expedita officia. Provident architecto maiores ad fugiat, facere quae.
+                            While you’re welcome to use NDC without registering, you have the option to register for a user account in order to easily bookmark and share favorite items. 
                         </p>
+                        <p>
+                            To sign up, use the link at the top right of the screen, click the “Sign up” button, and fill out the registration form. 
+                            
+                        </p>
+                        </div>
+                        <div id="favs">
+                            <h2>
+                                Save favorites
+                            </h2>
+                        <p>
+                            Once you’re signed in, you’ll see a new menu option at the top right: My Collections, where you can save different sets of favorites.
+
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p>
+                            To create a collection, click the “Add to Collection” button under any NDC item:
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p>
+                            This will open a pop-up window, where you’ll be prompted to add the item to a new or existing collection:
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p>
+                            View your saved items by clicking “My Collections” at the top right screen; from there, you can invite others to view and/or edit your collection via “Manage Collaborators”, or create a URL accessible to anyone with the “Share” option.
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
                     </div>
-                    <div class="search-tips">
+                    <div id="search-browse">
                         <h2>Search Tips</h2>
+                        <p>
+                            The NDC home page offers three paths into the collections: use the search box at the upper right if you know what you're looking for; click the Browse All button if you want to see everything that's available; or select one of the tiles in the Explore section to browse specific formats or subject areas. 
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
                         <div id="refine">
                             <h3>Refine with filters</h3>
                             <p>
@@ -175,7 +205,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="share">
+                    <div id="share">
                         <h2>Share</h2>
                         <div id="urls">
                             <h3>Persistent URLs</h3>
@@ -242,6 +272,23 @@
 
 
 <style>
+    .placeholder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        height: 300px;
+        color: white;
+        background: repeating-linear-gradient(
+            45deg,
+            #606dbc,
+            #606dbc 10px,
+            #465298 10px,
+            #465298 20px
+        );
+        text-align: center;
+        margin: 15px auto;
+    }
     .grid {
         color: transparent;
         margin: 10px;
