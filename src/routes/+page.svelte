@@ -36,27 +36,27 @@
         lakemul: "#927a9c"
     }
     const collors = [
-        ["sapphire", "#4051a3"],
-        ["parkGreen", "#20543e"],
-        ["midnight", "#111a2a"],
-        ["granite", "#eaebe7"],
-        ["lake", "#7ec4e2"],
-        ["sand", "#eadcc9"],
-        ["mulberry", "#ad285a"],
-        ["tile", "#925840"],
-        ["flame", "#f16151"],
-        ["lavender", "#cdb8d1"],
-        ["saphlav", "#8786b6"],
-        ["sandmul", "#c28892"],
-        ["granflame", "#e3a99e"],
-        ["lakemul", "#927a9c"],
+        ["Sapphire", "#4051a3"],
+        ["Park Green", "#20543e"],
+        ["Midnight", "#111a2a"],
+        ["Granite", "#eaebe7"],
+        ["Lake", "#7ec4e2"],
+        ["Sand", "#eadcc9"],
+        ["Mulberry", "#ad285a"],
+        ["Tile", "#925840"],
+        ["Flame", "#f16151"],
+        ["Lavender", "#cdb8d1"],
+        ["Sapphire / Lavender", "#8786b6"],
+        ["Sand / Mulberry", "#c28892"],
+        ["Granite / Flame", "#e3a99e"],
+        ["Lake / Mulberry", "#927a9c"],
     ]
     const colorways = [
-        [colors.mulberry, colors.saphlav, colors.lavender, "mulberry, sapphire/lavender, lavender"],
-        [colors.mulberry, colors.sandmul, colors.sand, "mulberry, sand/mulberry, sand"],
-        [colors.mulberry, colors.lakemul, colors.lake, "mulberry, lake/mulberry, lake"],
+        [colors.mulberry, colors.saphlav, colors.lavender, "mulberry, sapphire / lavender, lavender"],
+        [colors.mulberry, colors.sandmul, colors.sand, "mulberry, sand / mulberry, sand"],
+        [colors.mulberry, colors.lakemul, colors.lake, "mulberry, lake / mulberry, lake"],
         [colors.sapphire, colors.lake, colors.granite, "sapphire, lake, granite"],
-        [colors.sapphire, colors.saphlav, colors.lavender, "sapphire, sapphire/lavender, lavender"],
+        [colors.sapphire, colors.saphlav, colors.lavender, "sapphire, sapphire / lavender, lavender"],
         [colors.sapphire, colors.lavender, colors.granite, "sapphire, lavender, granite"],
         [colors.sand, colors.flame, colors.tile, "sand, flame, tile"],
         [colors.granite, colors.mulberry, colors.flame, "granite, mulberry, flame"],
@@ -108,7 +108,7 @@
         colorSwitchType = type
     }
     let hoverWay = ''
-    const switchHoverWay = (way) => hoverWay = way
+    let hoverColor = ''
 </script>
 <Header {nogoColor} />
 
@@ -121,12 +121,12 @@
                     <AccordionItem title="Color Picker">
                         <div class="wrappper">
                             <ul class="grid-trio">
-                                <p id="colorway-name">{hoverWay}</p>
                                 {#each colorways as way, i}
-                                    <li title={way[3]} on:onmouseenter={() => switchHoverWay(way[3])} on:onmouseleave={() => switchHoverWay('')} class="grid-trio-item" style={`background: linear-gradient(90deg, ${way[0]} 0%, ${way[0]} 33%, ${way[1]} 33%, ${way[1]} 66%, ${way[2]} 66%, ${way[2]} 100%);`} on:click={() => colorSwitcher(i)}>{i} </li>
+                                    <li title={way[3]} on:mouseenter={() => hoverColor = way[3]} on:mouseleave={() => hoverColor=''} class="grid-trio-item" style={`background: linear-gradient(90deg, ${way[0]} 0%, ${way[0]} 33%, ${way[1]} 33%, ${way[1]} 66%, ${way[2]} 66%, ${way[2]} 100%);`} on:click={() => colorSwitcher(i)}>{i} </li>
                                 {/each}
                                 </ul>
-                            <div class="wrapper">
+                                <p class="color-name">{hoverColor}</p>
+                                <div class="wrapper">
                                 <Dropdown
                                     hideLabel
                                     bind:selectedId={colorSwitchType}
@@ -138,7 +138,7 @@
                                     />
                                 <ul class="grid">
                                     {#each collors as color, i}
-                                        <li title={color[0]} class="grid-item" style={`color: ${color[1]}; background-color: ${color[1]}`} on:click={() => singleColorSwitcher(color[1])}>{i}</li>
+                                        <li on:mouseenter={() => hoverColor = color[0]} on:mouseleave={() => hoverColor=''} title={color[0]} class="grid-item" style={`color: ${color[1]}; background-color: ${color[1]}`} on:click={() => singleColorSwitcher(color[1])}>{i}</li>
                                     {/each}
                                 </ul>
                             </div>
@@ -331,12 +331,22 @@
     }
     .wrappper {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        position: relative;
     }
     .grid-trio-item:hover, .grid-item:hover {
         border: 1px solid black;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, 
                     rgba(0, 0, 0, 0.45) 0px 0px 5px inset;
+    }
+    .color-name {
+        flex-basis: 20vw;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .main-content {
+        width: 80%;
+        margin: auto;
     }
     .main-content div {
         padding: 15px 0 0 0;

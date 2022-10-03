@@ -14,3 +14,6 @@
 .bx--header~.bx--content{
     margin-top: 130px !important;
 }
+.bx--accordion__content {
+    padding: 25px !important;
+}
