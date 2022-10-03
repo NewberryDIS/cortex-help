@@ -1,0 +1,23 @@
+h1, h2 {
+    font-family: 'Flecha M Medium' !important;
+}
+h2 {
+    /* font-family: 'Styrene B'!important; */
+}
+h3 {
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+}
+h3, h4, dt {
+    font-family:'Styrene B Bold' !important;
+    font-size: 16px !important;
+
+}
+h5, p {
+
+    font-family:'Signifier' !important;
+}
+nav * {
+
+    font-family:'Signifier' !important;
+}

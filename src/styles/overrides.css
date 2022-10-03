@@ -1,0 +1,16 @@
+.bx--header {
+    height: 120px !important;
+    background-color: rgba(0,0,0,0);
+    background: linear-gradient(120deg, var(--colorOne) 0px, var(--colorOne) 300px, var(--colorTwo) 300px, var(--colorTwo) 100%) !important;
+    /* background: linear-gradient(120deg, rgba(135,134,182,1) 0px, rgba(135,134,182,1) 300px, rgba(205,184,209,1) 300px, rgba(205,184,209,1) 100%) !important; */
+}
+.bx--header__name{
+    display: none !important;
+    /* width: 20px !important; */
+}
+.bx--header~.bx--side-nav {
+    top: 120px !important;
+}
+.bx--header~.bx--content{
+    margin-top: 130px !important;
+}
