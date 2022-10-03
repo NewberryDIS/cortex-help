@@ -21,7 +21,7 @@
   <svelte:fragment slot="skip-to-content">
     <SkipToContent />
   </svelte:fragment>
-  <Nogo {nogoColor} />
+  <a href="https://newberry.org"><Nogo {nogoColor} /></a>
   <h1 style={`color: ${nogoColor}`}>Digital Collections</h1>
 </Header>
   

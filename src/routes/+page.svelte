@@ -171,25 +171,23 @@
                         <h3>
                             Save favorites
                         </h3>
-                        <div class="instructions">
-                            <p>
-                                Once you’re signed in, you’ll see a new menu option at the top right: My Collections, where you can save different sets of favorites.
+                        <p >
+                            Once you’re signed in, you’ll see a new menu option at the top right: My Collections, where you can save different sets of favorites.
 
-                            </p>
-                            <div class="placeholder">PLACEHOLDER IMAGE</div>
-                            <p>
-                                To create a collection, click the “Add to Collection” button under any NDC item:
-                            </p>
-                            <div class="placeholder">PLACEHOLDER IMAGE</div>
-                            <p>
-                                This will open a pop-up window, where you’ll be prompted to add the item to a new or existing collection:
-                            </p>
-                            <div class="placeholder">PLACEHOLDER IMAGE</div>
-                            <p>
-                                View your saved items by clicking “My Collections” at the top right screen; from there, you can invite others to view and/or edit your collection via “Manage Collaborators”, or create a URL accessible to anyone with the “Share” option.
-                            </p>
-                            <div class="placeholder">PLACEHOLDER IMAGE</div>
-                        </div>
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p class="instructions">
+                            To create a collection, click the “Add to Collection” button under any NDC item:
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p class="instructions">
+                            This will open a pop-up window, where you’ll be prompted to add the item to a new or existing collection:
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p class="instructions">
+                            View your saved items by clicking “My Collections” at the top right screen; from there, you can invite others to view and/or edit your collection via “Manage Collaborators”, or create a URL accessible to anyone with the “Share” option.
+                        </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
                     </div>
                     <div id="search-browse">
                         <h3>Search Tips</h3>
@@ -303,9 +301,11 @@
         );
         text-align: center;
         margin: 15px auto;
+        border: 1px solid rgba(0,0,0,1) !important;
     }
     .instructions {
-        width: 70%;
+        width: 60%;
+        min-width: 500px;
         margin: auto;
     }
     .grid {
