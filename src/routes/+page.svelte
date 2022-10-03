@@ -117,6 +117,7 @@
     <Grid>
         <Row>
             <Column>
+                <h2>Help</h2>
                 <Accordion>
                     <AccordionItem title="Color Picker">
                         <div class="wrappper">
@@ -145,136 +146,136 @@
                         </div>
                     </AccordionItem>
                 </Accordion>
-                            <div class="main-content">
-                                <div id="about">
-                                    <h2>
-                                        About this site
-                                    </h2>
-                                    <p>
-                                        Welcome to Newberry Digital Collections! This site features thousands of digitized manuscripts, maps, books, photographs, artworks, audio and video recordings, and other rare and unique materials from the collections of the Newberry, Chicago's independent research library since 1887. The content here represents only a fraction of the library's vast holdings; materials are continuously digitized and made freely available online as resources allow. To support these efforts, visit <a href="https://www.newberry.org/give">Give to the Newberry</a>.
-                                    </p>
-                                </div>
-                                <div id="create-account">
-                                    <h2>
-                                        Create account
-                                    </h2>
-                                    <p>
-                                        While you’re welcome to use NDC without registering, you have the option to register for a user account in order to easily bookmark and share favorite items. 
-                                    </p>
-                                    <p>
-                                        To sign up, use the link at the top right of the screen, click the “Sign up” button, and fill out the registration form. 
-                                        
-                                    </p>
-                                </div>
-                                <div id="favs">
-                                    <h2>
-                                        Save favorites
-                                    </h2>
-                                    <div class="instructions">
-                                        <p>
-                                            Once you’re signed in, you’ll see a new menu option at the top right: My Collections, where you can save different sets of favorites.
+                <div class="main-content">
+                    <div id="about">
+                        <h3>
+                            About this site
+                        </h3>
+                        <p>
+                            Welcome to Newberry Digital Collections! This site features thousands of digitized manuscripts, maps, books, photographs, artworks, audio and video recordings, and other rare and unique materials from the collections of the Newberry, Chicago's independent research library since 1887. The content here represents only a fraction of the library's vast holdings; materials are continuously digitized and made freely available online as resources allow. To support these efforts, visit <a href="https://www.newberry.org/give">Give to the Newberry</a>.
+                        </p>
+                    </div>
+                    <div id="create-account">
+                        <h3>
+                            Create account
+                        </h3>
+                        <p>
+                            While you’re welcome to use NDC without registering, you have the option to register for a user account in order to easily bookmark and share favorite items. 
+                        </p>
+                        <p>
+                            To sign up, use the link at the top right of the screen, click the “Sign up” button, and fill out the registration form. 
+                            
+                        </p>
+                    </div>
+                    <div id="favs">
+                        <h3>
+                            Save favorites
+                        </h3>
+                        <div class="instructions">
+                            <p>
+                                Once you’re signed in, you’ll see a new menu option at the top right: My Collections, where you can save different sets of favorites.
 
-                                        </p>
-                                        <div class="placeholder">PLACEHOLDER IMAGE</div>
-                                        <p>
-                                            To create a collection, click the “Add to Collection” button under any NDC item:
-                                        </p>
-                                        <div class="placeholder">PLACEHOLDER IMAGE</div>
-                                        <p>
-                                            This will open a pop-up window, where you’ll be prompted to add the item to a new or existing collection:
-                                        </p>
-                                        <div class="placeholder">PLACEHOLDER IMAGE</div>
-                                        <p>
-                                            View your saved items by clicking “My Collections” at the top right screen; from there, you can invite others to view and/or edit your collection via “Manage Collaborators”, or create a URL accessible to anyone with the “Share” option.
-                                        </p>
-                                        <div class="placeholder">PLACEHOLDER IMAGE</div>
-                                    </div>
-                                </div>
-                                <div id="search-browse">
-                                    <h2>Search Tips</h2>
-                                    <p>
-                                        The NDC home page offers three paths into the collections: use the search box at the upper right if you know what you're looking for; click the Browse All button if you want to see everything that's available; or select one of the tiles in the Explore section to browse specific formats or subject areas. 
-                                    </p>
-                                    
-                                    <div class="placeholder">PLACEHOLDER IMAGE</div>
-                                    <div id="refine">
-                                        <h3>Refine with filters</h3>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam dignissimos sit ipsa iure, facilis cupiditate provident facere eaque iste reprehenderit. Ad quaerat quia iste enim molestias, neque repudiandae. Error!
-                                        </p>
-                                    </div>
-                                    <div id="customize">
-                                        <h3>Customize results with View &amp; Sort menu</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolore, reprehenderit non obcaecati quae suscipit ullam perferendis aspernatur quos tempora esse voluptas ex molestias numquam voluptates labore necessitatibus rem quasi?
-                                        </p>
-                                    </div>
-                                    <div id="mods">
-                                        <h3>Modifiers and wildcards</h3>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam, velit unde quasi autem saepe blanditiis nesciunt quaerat voluptas aliquam ut illum, incidunt aliquid tenetur? Expedita quas perspiciatis deleniti illo.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="share">
-                                    <h2>Share</h2>
-                                    <div id="urls">
-                                        <h3>Persistent URLs</h3>
-                                        <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto mollitia eum dignissimos repudiandae earum tempora ullam molestiae. Beatae doloremque explicabo illum in tempora, doloribus molestias deserunt voluptatum qui officiis nemo!
-                                        </p>
-                                    </div>
-                                    <div id="cite">
-                                        <h3>Citations</h3>
-                                        <p>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil similique dignissimos id pariatur facilis, nesciunt natus dolor quaerat quibusdam in, ipsa est placeat mollitia itaque eius labore vero. Tempora, doloremque?
-                                        </p>
-                                    </div>
-                                    <div id="social-media">
-                                        <h3>Social media</h3>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ducimus similique quo in odio ipsum ipsa minus voluptatibus quidem praesentium commodi adipisci cumque enim rerum, tempora id, laudantium eum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="download">
-                                    <h2>Download</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis veritatis voluptates dicta quae eius veniam sit, ratione molestias itaque omnis accusamus corporis atque blanditiis. Illum saepe quae alias aperiam.
-                                    </p>
-                                </div>
-                                <div id="permissions">
-                                    <h2>Use &amp; permissions</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum quod quibusdam? Ea mollitia tempora deserunt necessitatibus aspernatur voluptas harum ad architecto unde quam nobis aperiam, autem accusamus laudantium! Perferendis.  
-                                    </p>
-                                </div>
-                                <div id="faqs">
-                                    <h2>FAQs</h2>
-                                    <dl>
-                                        <dt>
-                                            question 1
-                                        </dt>
-                                        <dd>
-                                            answer 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sint nobis quaerat accusamus iusto incidunt obcaecati ab, porro, magnam vero hic illo! Tempora, libero vero. Vero aspernatur nihil repellendus nisi!
-                                        </dd>
-                                        <dt>question 2</dt>
-                                        <dd>
-                                            answer 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio hic, laboriosam iusto eligendi molestias eveniet adipisci perspiciatis dicta labore voluptatibus suscipit! Aliquid commodi ex amet alias, repellat maxime error?
-                                        </dd>
-                                        <dt>question 3</dt>
-                                        <dd>
-                                            answer 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ut, fugit distinctio voluptas, ipsam corporis inventore nostrum quam odio praesentium impedit. Qui recusandae atque ipsa id, sunt eligendi nobis nesciunt.
-                                        </dd>
-                                    </dl>
-                                </div>
-                                <div id="contact">
-                                    <h2>Contact us</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque debitis unde possimus ab iste ipsa magnam velit quibusdam pariatur recusandae omnis atque deleniti id mollitia, amet et. Facere, placeat.
-                                    </p>
-                                </div>
-                            </div>
+                            </p>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                            <p>
+                                To create a collection, click the “Add to Collection” button under any NDC item:
+                            </p>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                            <p>
+                                This will open a pop-up window, where you’ll be prompted to add the item to a new or existing collection:
+                            </p>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                            <p>
+                                View your saved items by clicking “My Collections” at the top right screen; from there, you can invite others to view and/or edit your collection via “Manage Collaborators”, or create a URL accessible to anyone with the “Share” option.
+                            </p>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        </div>
+                    </div>
+                    <div id="search-browse">
+                        <h3>Search Tips</h3>
+                        <p>
+                            The NDC home page offers three paths into the collections: use the search box at the upper right if you know what you're looking for; click the Browse All button if you want to see everything that's available; or select one of the tiles in the Explore section to browse specific formats or subject areas. 
+                        </p>
+                        
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <div id="refine">
+                            <h4>Refine with filters</h4>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam dignissimos sit ipsa iure, facilis cupiditate provident facere eaque iste reprehenderit. Ad quaerat quia iste enim molestias, neque repudiandae. Error!
+                            </p>
+                        </div>
+                        <div id="customize">
+                            <h4>Customize results with View &amp; Sort menu</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolore, reprehenderit non obcaecati quae suscipit ullam perferendis aspernatur quos tempora esse voluptas ex molestias numquam voluptates labore necessitatibus rem quasi?
+                            </p>
+                        </div>
+                        <div id="mods">
+                            <h4>Modifiers and wildcards</h4>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam, velit unde quasi autem saepe blanditiis nesciunt quaerat voluptas aliquam ut illum, incidunt aliquid tenetur? Expedita quas perspiciatis deleniti illo.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="share">
+                        <h3>Share</h3>
+                        <div id="urls">
+                            <h4>Persistent URLs</h4>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto mollitia eum dignissimos repudiandae earum tempora ullam molestiae. Beatae doloremque explicabo illum in tempora, doloribus molestias deserunt voluptatum qui officiis nemo!
+                            </p>
+                        </div>
+                        <div id="cite">
+                            <h4>Citations</h4>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil similique dignissimos id pariatur facilis, nesciunt natus dolor quaerat quibusdam in, ipsa est placeat mollitia itaque eius labore vero. Tempora, doloremque?
+                            </p>
+                        </div>
+                        <div id="social-media">
+                            <h4>Social media</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ducimus similique quo in odio ipsum ipsa minus voluptatibus quidem praesentium commodi adipisci cumque enim rerum, tempora id, laudantium eum.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="download">
+                        <h3>Download</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis veritatis voluptates dicta quae eius veniam sit, ratione molestias itaque omnis accusamus corporis atque blanditiis. Illum saepe quae alias aperiam.
+                        </p>
+                    </div>
+                    <div id="permissions">
+                        <h3>Use &amp; permissions</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum quod quibusdam? Ea mollitia tempora deserunt necessitatibus aspernatur voluptas harum ad architecto unde quam nobis aperiam, autem accusamus laudantium! Perferendis.  
+                        </p>
+                    </div>
+                    <div id="faqs">
+                        <h3>FAQs</h3>
+                        <dl>
+                            <dt>
+                                question 1
+                            </dt>
+                            <dd>
+                                answer 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sint nobis quaerat accusamus iusto incidunt obcaecati ab, porro, magnam vero hic illo! Tempora, libero vero. Vero aspernatur nihil repellendus nisi!
+                            </dd>
+                            <dt>question 2</dt>
+                            <dd>
+                                answer 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odio hic, laboriosam iusto eligendi molestias eveniet adipisci perspiciatis dicta labore voluptatibus suscipit! Aliquid commodi ex amet alias, repellat maxime error?
+                            </dd>
+                            <dt>question 3</dt>
+                            <dd>
+                                answer 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ut, fugit distinctio voluptas, ipsam corporis inventore nostrum quam odio praesentium impedit. Qui recusandae atque ipsa id, sunt eligendi nobis nesciunt.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="contact">
+                        <h3>Contact us</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque debitis unde possimus ab iste ipsa magnam velit quibusdam pariatur recusandae omnis atque deleniti id mollitia, amet et. Facere, placeat.
+                        </p>
+                    </div>
+                </div>
             </Column>
         </Row>
     </Grid>
@@ -287,21 +288,24 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-transform: uppercase !important;
+        font-size: 20px !important;
+        font-family:'Styrene B Bold' !important;
         width: 500px;
         height: 300px;
-        color: white;
+        color: #4051a3;
         background: repeating-linear-gradient(
-            45deg,
-            #606dbc,
-            #606dbc 10px,
-            #465298 10px,
-            #465298 20px
+            120deg,
+            #927a9c,
+            #927a9c 40px,
+            #8786b6 40px,
+            #8786b6 80px
         );
         text-align: center;
         margin: 15px auto;
     }
     .instructions {
-        width: 50%;
+        width: 70%;
         margin: auto;
     }
     .grid {
