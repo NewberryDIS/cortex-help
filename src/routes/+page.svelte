@@ -107,11 +107,7 @@
             }
         }
     }
-    const switchColorSwitchType = (type) => {
-        console.log(type)
-        colorSwitchType = type
-    }
-    let hoverWay = ''
+    
     let hoverColor = ''
 </script>
 <Header {nogoColor} />
@@ -122,34 +118,6 @@
         <Row>
             <Column>
                 <h2>Help</h2>
-                <Accordion>
-                    <AccordionItem title="Color Picker">
-                        <div class="wrappper">
-                            <ul class="grid-trio">
-                                {#each colorways as way, i}
-                                    <li title={way[3]} on:mouseenter={() => hoverColor = way[3]} on:mouseleave={() => hoverColor=''} class="grid-trio-item" style={`background: linear-gradient(90deg, ${way[0]} 0%, ${way[0]} 33%, ${way[1]} 33%, ${way[1]} 66%, ${way[2]} 66%, ${way[2]} 100%);`} on:click={() => colorSwitcher(i)}>{i} </li>
-                                {/each}
-                                </ul>
-                                <p class="color-name">{hoverColor}</p>
-                                <div class="wrapper">
-                                <Dropdown
-                                    hideLabel
-                                    bind:selectedId={colorSwitchType}
-                                    items={[
-                                        { id: "text" },
-                                        { id: "left" },
-                                        { id: "right" },
-                                    ]}
-                                    />
-                                <ul class="grid">
-                                    {#each collors as color, i}
-                                        <li on:mouseenter={() => hoverColor = color[0]} on:mouseleave={() => hoverColor=''} title={color[0]} class="grid-item-color" style={`color: ${color[1]}; background-color: ${color[1]}`} on:click={() => singleColorSwitcher(color[1])}>{i}</li>
-                                    {/each}
-                                </ul>
-                            </div>
-                        </div>
-                    </AccordionItem>
-                </Accordion>
                 <div class="main-content">
                     <div id="about">
                         <h3>
@@ -264,38 +232,69 @@
                     </div>
                     <div id="share">
                         <h3>Share</h3>
+                        <p>The Newberry seeks to make its collection as freely accessible and shareable as possible, in support of our mission to inspire research and learning in the humanities.
+                        </p>
                         <div id="urls">
                             <h4>Persistent URLs</h4>
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto mollitia eum dignissimos repudiandae earum tempora ullam molestiae. Beatae doloremque explicabo illum in tempora, doloribus molestias deserunt voluptatum qui officiis nemo!
+                                In order to <span class="bold">share an item</span>, you can create a persistent URL using the “Copy permanent link” button immediately below the viewer panel. Do not use the browser URL; it will just redirect to the Browse All results screen.
                             </p>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                            <p>
+
+                                In order to <span class="bold"> share a set of results</span>, use the browser URL; this will create a permanent link for re-use.
+                            </p>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
                         </div>
                         <div id="cite">
                             <h4>Citations</h4>
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil similique dignissimos id pariatur facilis, nesciunt natus dolor quaerat quibusdam in, ipsa est placeat mollitia itaque eius labore vero. Tempora, doloremque?
+                                The Newberry makes its collections available for any lawful purpose, commercial or non-commercial, without licensing or permission fees to the library, subject to the <a href="https://www.newberry.org/rights-and-reproductions">terms and conditions outlined here</a>. While it’s not required, we would appreciate the inclusion of the credit “Newberry Library” and a link to the item in the digital collection when repurposing. Tracking such use helps us justify and prioritize future digitization projects.
                             </p>
                         </div>
-                        <div id="social-media">
+                        <!-- <div id="social-media">
                             <h4>Social media</h4>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam ducimus similique quo in odio ipsum ipsa minus voluptatibus quidem praesentium commodi adipisci cumque enim rerum, tempora id, laudantium eum.
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                     <div id="download">
                         <h3>Download</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis veritatis voluptates dicta quae eius veniam sit, ratione molestias itaque omnis accusamus corporis atque blanditiis. Illum saepe quae alias aperiam.
+                            There are numerous ways to download content from NDC.From the item view, use the Download button; from the browse view, hover on the item’s thumbnail and click the Download icon. To download multiple items at once, select two or more from the browse view by clicking the checkbox on the browse thumbnail; this will cause a menu to appear at the bottom of the page that includes a download option at lower right.
                         </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p>
+                            Selecting any of these options will open a pop-up menu with three sections:
+                        </p>
+                        <dl class="grid-container-withimgs">
+                            <dt class="grid-item">Stacked assets:</dt>
+                            <dd class="grid-item"> When your item consists of multiple files (e.g. a postcard with front and back images; a book with page images; etc.), the default setting is to download all files. The “Images” section will let you know the number of files in the set. (To download a subset of files in the set, see below.) </dd>
+                        </dl>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+
+                        <dl class="grid-container-withimgs">
+                            <dt class="grid-item">Requestor status & use:</dt> 
+                            <dd class="grid-item">Please choose the best fit from the menu options.</dd>
+                        </dl>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <dl class="grid-container-withimgs">
+                            <dt class="grid-item">Image format:</dt> 
+                            <dd class="grid-item">Select from medium resolution jpegs or a highest-resolution tiff file</dd>
+                        </dl>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p>When you don’t want to download an entire set, e.g. only a few pages from this 302-page manuscript object</p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
+                        <p>Locate a page you’re interested in, then right-click on the image and select “View page details”.</p>
                     </div>
-                    <div id="permissions">
+                    <!-- <div id="permissions">
                         <h3>Use &amp; permissions</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum quod quibusdam? Ea mollitia tempora deserunt necessitatibus aspernatur voluptas harum ad architecto unde quam nobis aperiam, autem accusamus laudantium! Perferendis.  
                         </p>
-                    </div>
-                    <div id="faqs">
+                    </div> -->
+                    <!-- <div id="faqs">
                         <h3>FAQs</h3>
                         <dl>
                             <dt>
@@ -313,13 +312,13 @@
                                 answer 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ut, fugit distinctio voluptas, ipsam corporis inventore nostrum quam odio praesentium impedit. Qui recusandae atque ipsa id, sunt eligendi nobis nesciunt.
                             </dd>
                         </dl>
-                    </div>
-                    <div id="contact">
+                    </div> -->
+                    <!-- <div id="contact">
                         <h3>Contact us</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eaque debitis unde possimus ab iste ipsa magnam velit quibusdam pariatur recusandae omnis atque deleniti id mollitia, amet et. Facere, placeat.
                         </p>
-                    </div>
+                    </div> -->
                 </div>
 
             </Column>
@@ -328,25 +327,20 @@
 </Content>
   
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 70px auto ;
-  padding: 10px;
-}
-/* .grid-item {
-} */
-/* .grid-container .grid-item:nth-child(1) {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-}
-.grid-container .grid-item:nth-child(2) {
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
-}
-.grid-container .grid-item:nth-child(3){
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
-} */
+    .grid-container, .grid-container-withimgs {
+        display: grid;
+        padding: 10px;
+    }
+    .grid-container {
+        grid-template-columns: 70px auto ;
+    }
+    .grid-container-withimgs {
+
+        grid-template-columns: 200px auto ;
+    }
+    .bold {
+        font-weight: bold;
+    }
     .placeholder {
         display: flex;
         flex-direction: column;

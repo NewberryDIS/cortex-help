@@ -17,3 +17,12 @@
 .bx--accordion__content {
     padding: 25px !important;
 }
+.bx--accordion__title {
+
+    font-family:'Styrene B Bold' !important;
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+}
+.bx--accordion__content {
+    padding-top: 10px !important;
+}
