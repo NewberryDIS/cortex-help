@@ -69,10 +69,10 @@
     const colorSwitcher = (colorNumber = 5) => {
         if (browser){
             nogoColor = colorways[colorNumber][0]
-            // document !== undefined && document.documentElement.style.setProperty(
-            //     "--colorZero",
-            //     colorways[colorNumber][0]
-            // );
+            document !== undefined && document.documentElement.style.setProperty(
+                "--colorZero",
+                colorways[colorNumber][0]
+            );
             document !== undefined && document.documentElement.style.setProperty(
                 "--colorOne",
                 colorways[colorNumber][1]
@@ -90,6 +90,10 @@
         if (browser){
             if (colorSwitchType === 'text'){
                 nogoColor = color
+                document !== undefined && document.documentElement.style.setProperty(
+                    "--colorZero",
+                    color
+                );
             } else if (colorSwitchType === 'left'){
                 document !== undefined && document.documentElement.style.setProperty(
                     "--colorOne",
@@ -139,7 +143,7 @@
                                     />
                                 <ul class="grid">
                                     {#each collors as color, i}
-                                        <li on:mouseenter={() => hoverColor = color[0]} on:mouseleave={() => hoverColor=''} title={color[0]} class="grid-item" style={`color: ${color[1]}; background-color: ${color[1]}`} on:click={() => singleColorSwitcher(color[1])}>{i}</li>
+                                        <li on:mouseenter={() => hoverColor = color[0]} on:mouseleave={() => hoverColor=''} title={color[0]} class="grid-item-color" style={`color: ${color[1]}; background-color: ${color[1]}`} on:click={() => singleColorSwitcher(color[1])}>{i}</li>
                                     {/each}
                                 </ul>
                             </div>
@@ -152,7 +156,7 @@
                             About this site
                         </h3>
                         <p>
-                            Welcome to Newberry Digital Collections! This site features thousands of digitized manuscripts, maps, books, photographs, artworks, audio and video recordings, and other rare and unique materials from the collections of the Newberry, Chicago's independent research library since 1887. The content here represents only a fraction of the library's vast holdings; materials are continuously digitized and made freely available online as resources allow. To support these efforts, visit <a href="https://www.newberry.org/give">Give to the Newberry</a>.
+                            Welcome to <a href="https://collections.newberry.org/">Newberry Digital Collections</a>! This site features thousands of digitized manuscripts, maps, books, photographs, artworks, audio and video recordings, and other rare and unique materials from the collections of the Newberry, Chicago's independent research library since 1887. The content here represents only a fraction of the library's vast holdings; materials are continuously digitized and made freely available online as resources allow. To support these efforts, visit <a href="https://www.newberry.org/give">Give to the Newberry</a>.
                         </p>
                     </div>
                     <div id="create-account">
@@ -199,20 +203,63 @@
                         <div id="refine">
                             <h4>Refine with filters</h4>
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel aliquam dignissimos sit ipsa iure, facilis cupiditate provident facere eaque iste reprehenderit. Ad quaerat quia iste enim molestias, neque repudiandae. Error!
+                                Once you have a set of results, you can further refine your query using the filters side panel at the left of the screen. The side panel is a dynamic list of headings that changes depending on the attributes of your results.Check the boxes to narrow results by broad Type, specific Format, Creator, Subject, etc. Each time you choose a term, you’ll see the search results refresh to include only those that match the criteria you’ve selected. To undo a filter selection, click the box again to uncheck it, or use the “clear all” symbol 🚫 at the top of each facet.
                             </p>
+                        <div class="placeholder">PLACEHOLDER IMAGE</div>
                         </div>
                         <div id="customize">
                             <h4>Customize results with View &amp; Sort menu</h4>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolore, reprehenderit non obcaecati quae suscipit ullam perferendis aspernatur quos tempora esse voluptas ex molestias numquam voluptates labore necessitatibus rem quasi?
+                                The View & Sort menu allows you to change the display of items on the results page. Click the button located immediately above your results will launch a pop-up menu with the following categories:
+                            </p>
+                            <dl>
+                                <dt class="inline-title">View:</dt> 
+                                <dd class="inline-dd">Manage how items display.</dd>
+                                <br />
+                                <dt class="inline-title">Sort:</dt> 
+                                <dd class="inline-dd">Manage the order in which item display.</dd>
+                                <br />
+                                <dt class="inline-title">Count:</dt> 
+                                <dd class="inline-dd">Manage the number of items that display per page. The higher the count, the longer it may take for the page to load.</dd>
+                            </dl>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                            <div class="placeholder">PLACEHOLDER IMAGE</div>
+                            <p>
+                                To restore the original settings, select the “reset to default” option in the lower left corner.
                             </p>
                         </div>
                         <div id="mods">
                             <h4>Modifiers and wildcards</h4>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quibusdam, velit unde quasi autem saepe blanditiis nesciunt quaerat voluptas aliquam ut illum, incidunt aliquid tenetur? Expedita quas perspiciatis deleniti illo.
-                            </p>
+                            <dl class="grid-container">
+                                <dt class="grid-item">AND</dt>
+                                <dd class="grid-item">search for all values entered in the Search Bar. </dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> postcards AND beaches</dd>
+                                <dt class="grid-item">NOT</dt>
+                                <dd class="grid-item">exclude certain values. </dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> books NOT directories</dd>
+                                <dt class="grid-item">OR</dt>
+                                <dd class="grid-item">broaden your search to include any of the terms. </dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> greeting cards OR valentines</dd>
+                                <dt class="grid-item">( )</dt>
+                                <dd class="grid-item">when using multiple modifiers, parentheses specify the order in which they’re executed.</dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> (maps OR atlases) NOT guidebooks</dd>
+                                <dt class="grid-item">“ “</dt>
+                                <dd class="grid-item">quotation marks allow exact searching of a phrase.</dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> “commonplace book”</dd>
+                                <dt class="grid-item">*</dt>
+                                <dd class="grid-item">the asterisk broadens search by substituting for multiple characters.</dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> snow* – retrieves results with the values snow, snowflake, snowstorm, etc. </dd>
+                                <dt class="grid-item">?</dt>
+                                <dd class="grid-item">the question mark broadens search by substituting for a single character</dd>
+                                <div></div>
+                                <dd class="grid-item"><em>example: </em> organi?ation – retrieves results with the values organization and organisation</dd>
+                            </dl>
                         </div>
                     </div>
                     <div id="share">
@@ -274,14 +321,32 @@
                         </p>
                     </div>
                 </div>
+
             </Column>
         </Row>
     </Grid>
 </Content>
   
-
-
 <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 70px auto ;
+  padding: 10px;
+}
+/* .grid-item {
+} */
+/* .grid-container .grid-item:nth-child(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.grid-container .grid-item:nth-child(2) {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.grid-container .grid-item:nth-child(3){
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+} */
     .placeholder {
         display: flex;
         flex-direction: column;
@@ -291,13 +356,13 @@
         font-family:'Styrene B Bold' !important;
         width: 500px;
         height: 300px;
-        color: #4051a3;
+        color: var(--colorZero);
         background: repeating-linear-gradient(
             120deg,
-            #927a9c,
-            #927a9c 40px,
-            #8786b6 40px,
-            #8786b6 80px
+            var(--colorOne),
+            var(--colorOne) 40px,
+            var(--colorTwo) 40px,
+            var(--colorTwo) 80px
         );
         text-align: center;
         margin: 15px auto;
@@ -315,7 +380,7 @@
         grid-template-columns: 40px 40px 40px;
         gap: 5px;
     }
-    .grid-item {
+    .grid-item-color {
         height: 40px;
         transition: 0.2s;
         border: 1px solid rgba(0,0,0,1);
@@ -338,7 +403,7 @@
         justify-content: center;
         position: relative;
     }
-    .grid-trio-item:hover, .grid-item:hover {
+    .grid-trio-item:hover, .grid-item-color:hover {
         border: 1px solid black;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, 
                     rgba(0, 0, 0, 0.45) 0px 0px 5px inset;
