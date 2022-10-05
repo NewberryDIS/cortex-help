@@ -287,6 +287,8 @@
     .content-div {
         width: 100%;
         margin: 15px auto 0 auto;
+
+        scroll-margin-top: 130px;
     }
     .main-content dl, .main-content div>div{
         padding-left: 20px;

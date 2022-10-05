@@ -418,7 +418,7 @@
         width: 80%;
         margin: auto;
     }
-    .main-content div {
+    .main-content  {
         padding: 15px 0 0 0;
         scroll-margin-top: 120px;
     }

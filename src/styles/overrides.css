@@ -5,6 +5,18 @@
     background: linear-gradient(120deg, var(--colorOne) 0px, var(--colorOne) 350px, var(--colorTwo) 350px, var(--colorTwo) 100%) !important;
     /* background: linear-gradient(120deg, rgba(135,134,182,1) 0px, rgba(135,134,182,1) 300px, rgba(205,184,209,1) 300px, rgba(205,184,209,1) 100%) !important; */
 }
+
+@media only screen and (min-width: 1060px) {
+    .bx--header {
+        background: linear-gradient(120deg, var(--colorOne) 0px, var(--colorOne) 300px, var(--colorTwo) 300px, var(--colorTwo) 100%) !important;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .bx--header {
+        background: linear-gradient(120deg, var(--colorOne) 0px, var(--colorOne) 350px, var(--colorTwo) 350px, var(--colorTwo) 100%) !important;
+    }
+}
+
 .bx--header__name{
     display: none !important;
     /* width: 20px !important; */
