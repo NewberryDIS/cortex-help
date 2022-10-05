@@ -1,3 +1,9 @@
+
+:root {
+    --colorZero: #4051a3;
+    --colorOne: #cdb8d1;
+    --colorTwo: #eaebe7;
+}
 h1, h2 {
     font-family: 'Flecha M Medium' !important;
 }
@@ -18,3 +24,8 @@ nav * {
 
     font-family:'Signifier' !important;
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+    .main-content {
+        padding-left: 200px;
+    }}
