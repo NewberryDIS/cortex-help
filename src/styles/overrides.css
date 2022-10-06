@@ -36,9 +36,20 @@
     text-transform: uppercase !important;
     font-size: 16px !important;
 }
+.bx--list__item {
+    font-family:'Signifier' !important;
+}
 .bx--accordion__content {
     padding-top: 10px !important;
 }
 .bx--header__action.bx--header__menu-trigger.bx--header__menu-toggle {
     height: 120px;
 }
+
+/* .bx--tabs-trigger, .bx--tabs__nav.bx--tabs__nav--hidden {
+    width: 100% !important;
+} */
+/* 
+a.bx--tabs__nav-link {
+    width: 100% !important;
+} */

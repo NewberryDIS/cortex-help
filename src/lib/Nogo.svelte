@@ -1,5 +1,4 @@
 <script>
-    export let nogoColor
 </script>
 
 <svg
