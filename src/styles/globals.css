@@ -3,6 +3,7 @@
     --colorZero: #4051a3;
     --colorOne: #cdb8d1;
     --colorTwo: #eaebe7;
+    overflow: scroll;
 }
 h1, h2 {
     font-family: 'Flecha M Medium' !important;

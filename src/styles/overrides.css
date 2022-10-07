@@ -44,6 +44,12 @@
 .bx--header__action.bx--header__menu-trigger.bx--header__menu-toggle {
     height: 120px;
 }
+.bx--col {
+    position: relative;
+}
+.bx--tabs {
+    z-index: 10;
+}
 
 /* .bx--tabs-trigger, .bx--tabs__nav.bx--tabs__nav--hidden {
     width: 100% !important;
@@ -57,4 +63,15 @@ a.bx--tabs__nav-link {
 .bx--tabs__nav {
     flex-direction: column !important;
     overflow: hidden !important;
+}
+
+.bx--modal-content {
+    margin: 8px 16px 16px 16px !important;
+    padding: 0 !important;
+}
+
+.bx--modal-header h3 {
+    text-transform: none !important;
+    font-style: normal !important;
+    font-family:'Styrene B' !important;
 }
