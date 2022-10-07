@@ -21,17 +21,17 @@
             <Row>
                 <Column>
                     <h2>Help</h2>
-                    <div class="tabs-content-wrapper">
-                        <Tabs  bind:selected autoWidth>
-                            <Tab label="About" />
-                            <Tab label="Create Account" />
-                            <Tab label="Favorites" />
-                            <Tab label="Search &amp; Browse" />
-                            <Tab label="Share" />
-                            <Tab label="Download" />
-                            <Tab label="Use &amp; Permissions" />
-                            <Tab label="Contact Us" />
-                            <svelte:fragment slot="content">
+                    <Tabs bind:selected >
+                        <Tab label="About" />
+                        <Tab label="Create Account" />
+                        <Tab label="Favorites" />
+                        <Tab label="Search &amp; Browse" />
+                        <Tab label="Share" />
+                        <Tab label="Download" />
+                        <Tab label="Use &amp; Permissions" />
+                        <Tab label="Contact Us" />
+                        <svelte:fragment slot="content">
+                            <div class="tab-content">
                                 <TabContent> <!-- About this Site -->
                                     <h3>About This Site</h3>
                                     <div class="tab-content-wrapper">
@@ -140,8 +140,7 @@
                                         </div>
                                     </div>
                                 </TabContent>
-                                <TabContent>
-                                    <!-- Share -->
+                                <TabContent> <!-- Share -->
                                     <h3>Share</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -157,8 +156,7 @@
                                         <img class="help-img" src="share-2.png" alt="" />
                                     </div>
                                 </TabContent>
-                                <TabContent>
-                                    <!-- Download-->
+                                <TabContent> <!-- Download-->
                                     <h3>How to Download Content</h3>
                                     <div class="tab-content-wrapper">
                                         <p>There are numerous ways to download content from NDC:</p>
@@ -199,7 +197,7 @@
                                         </p>
                                     </div>
                                 </TabContent>
-                                <TabContent>
+                                <TabContent> <!-- Use & Permissions -->
                                     <h3>Use & permissions</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -238,9 +236,9 @@
                                         </p>
                                     </div>
                                 </TabContent>
-                            </svelte:fragment>
-                        </Tabs>
-                    </div>
+                            </div>
+                        </svelte:fragment>
+                    </Tabs>
                 </Column>
             </Row>
         </Grid>
@@ -248,6 +246,17 @@
 </div>
 
 <style>
+
+@media only screen and (min-width: 778px) {
+    .tab-content {
+        padding-left: 15em;
+    }
+}
+@media only screen and (min-width: 666px) and (max-width: 777) {
+    .tab-content {
+        padding-left: 10em;
+    }
+}
     .grid-container,
     .grid-container-withimgs {
         display: grid;
@@ -277,7 +286,7 @@
     }
     .main-content {
         width: 90%;
-        min-width: 450px;
+        /* min-width: 450px; */
         margin: auto;
     }
     .main-content dl,
@@ -308,16 +317,5 @@
     }
     .rights-dl dd {
         padding-top: 3px;
-    }
-    .tab-content-wrapper {
-        margin-top: 15px;
-        width: 70%;
-        min-width: 400px;
-    }
-    .tab-content-wrapper p,
-    .tab-content-wrapper h4,
-    .tabs-content-wrapper,
-    h5 {
-        margin-top: 15px;
     }
 </style>

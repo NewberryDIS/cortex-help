@@ -6,8 +6,8 @@
     import "$styles/globals.css";
     import "$styles/overrides.css";
 
-    import Header from "$lib/HeaderSm.svelte";
-    import { Content, Grid, Row, Column, Tabs, Tab, TabContent, UnorderedList, ListItem } from "carbon-components-svelte";
+    import Header from "$lib/Header.svelte";
+    import { Content, Grid, Row, Column, Tabs, Tab, TabContent, UnorderedList, ListItem, Accordion, AccordionItem } from "carbon-components-svelte";
     import "carbon-components-svelte/css/all.css";
 
   let selected = 0;
@@ -22,25 +22,17 @@
                 <Column>
                     <h2>Help</h2>
                     <div class="tabs-content-wrapper">
-                        <Tabs  bind:selected autoWidth>
-                            <Tab label="About" />
-                            <Tab label="Create Account" />
-                            <Tab label="Favorites" />
-                            <Tab label="Search &amp; Browse" />
-                            <Tab label="Share" />
-                            <Tab label="Download" />
-                            <Tab label="Use &amp; Permissions" />
-                            <Tab label="Contact Us" />
-                            <svelte:fragment slot="content">
-                                <TabContent> <!-- About this Site -->
+                        <Accordion align="start">
+                            
+                                <AccordionItem title="About this Site">
                                     <h3>About This Site</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
                                             Welcome to <a href="https://collections.newberry.org/">Newberry Digital Collections (NDC)</a>! This site features thousands of digitized manuscripts, maps, books, photographs, artworks, audio and video recordings, and other rare and unique materials from the collections of the Newberry, Chicago's independent research library since 1887. The content here represents only a fraction of the library's vast holdings; materials are continuously digitized and made freely available online as resources allow. To support these efforts, visit <a href="https://www.newberry.org/give">Give to the Newberry</a>.
                                         </p>
                                     </div>
-                                </TabContent>
-                                <TabContent> <!-- Create Account -->
+                                </AccordionItem>
+                                <AccordionItem title="Create Account">
                                     <h3>How To Create an Account</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -49,8 +41,8 @@
                                         <p>To sign up, use the link at the top right of the screen, click the “Sign up” button, and fill out the registration form.</p>
                                         <img class="help-img" src="create-1.png" alt="Click 'Sign Up'" />
                                     </div>
-                                </TabContent>
-                                <TabContent>  <!-- Save Favorites -->
+                                </AccordionItem>
+                                <AccordionItem title="Save Favorites">
                                     <h3>Saving Favorites</h3>
                                     <div class="tab-content-wrapper">
                                         <p>Once you’re signed in, you’ll see a new menu option at the top right: My Collections, where you can save different sets of favorites.</p>
@@ -64,8 +56,8 @@
                                         </p>
                                         <img class="help-img" src="fave-3.png" alt="" />
                                     </div>
-                                </TabContent>
-                                <TabContent> <!-- Search & Browse -->
+                                </AccordionItem>
+                                <AccordionItem title="Search & Browse">
                                     <h3>Search Tips</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -139,9 +131,8 @@
                                             </dl>
                                         </div>
                                     </div>
-                                </TabContent>
-                                <TabContent>
-                                    <!-- Share -->
+                                </AccordionItem>
+                                <AccordionItem title="Share">
                                     <h3>Share</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -156,9 +147,8 @@
                                         </p>
                                         <img class="help-img" src="share-2.png" alt="" />
                                     </div>
-                                </TabContent>
-                                <TabContent>
-                                    <!-- Download-->
+                                </AccordionItem>
+                                <AccordionItem title=" Download">
                                     <h3>How to Download Content</h3>
                                     <div class="tab-content-wrapper">
                                         <p>There are numerous ways to download content from NDC:</p>
@@ -198,8 +188,8 @@
                                             Alternatively, from the compound object viewer, you may scroll to the bottom of the screen to view page thumbnails, select your preferred subset via checkboxes, and use the Download option at the lower right corner.
                                         </p>
                                     </div>
-                                </TabContent>
-                                <TabContent>
+                                </AccordionItem>
+                                <AccordionItem title="Use &amp; Permissions">
                                     <h3>Use & permissions</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -226,8 +216,8 @@
                                             While it’s not required, we would appreciate the inclusion of the credit “Newberry Library” and a link to the item in the digital collection when repurposing NDC content. Tracking such use helps us justify and prioritize future digitization projects.
                                         </p>
                                     </div>
-                                </TabContent>
-                                <TabContent>
+                                </AccordionItem>
+                                <AccordionItem title="Contact Us">
                                     <h3>Contact Us</h3>
                                     <div class="tab-content-wrapper">
                                         <p>
@@ -237,9 +227,8 @@
                                             For questions about the collection materials featured on this site, please <a href="https://www.newberry.org/contact-librarian" >contact a Newberry reference librarian</a>
                                         </p>
                                     </div>
-                                </TabContent>
-                            </svelte:fragment>
-                        </Tabs>
+                                </AccordionItem>
+                            </Accordion>
                     </div>
                 </Column>
             </Row>

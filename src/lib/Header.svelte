@@ -17,9 +17,9 @@
   import Nonlyogo from "./Nonlyogo.svelte";
   let isSideNavOpen = true;
   let innerWidth = 0
-  $: if (innerWidth > 800 && !isSideNavOpen){
-    isSideNavOpen = true
-  }
+  // $: if (innerWidth > 800 && !isSideNavOpen){
+  //   isSideNavOpen = true
+  // }
 </script>
 
 <svelte:window bind:innerWidth  />
@@ -46,7 +46,7 @@
   </a>
 </Header>
   
-<SideNav bind:isOpen={isSideNavOpen}>
+<SideNav bind:isOpen={isSideNavOpen} rail>
   <SideNavItems>
     <SideNavLink href="#about" text="About" />
     <SideNavLink href="#create-account" text="Create an Account" />

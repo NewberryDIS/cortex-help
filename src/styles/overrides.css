@@ -13,7 +13,7 @@
 }
 @media only screen and (max-width: 1060px) {
     .bx--header {
-        background: linear-gradient(120deg, var(--colorOne) 0px, var(--colorOne) 350px, var(--colorTwo) 350px, var(--colorTwo) 100%) !important;
+        background: linear-gradient(120deg, var(--colorOne) 0px, var(--colorOne) 300px, var(--colorTwo) 300px, var(--colorTwo) 100%) !important;
     }
 }
 
@@ -31,7 +31,6 @@
     padding: 25px !important;
 }
 .bx--accordion__title {
-
     font-family:'Styrene B Bold' !important;
     text-transform: uppercase !important;
     font-size: 16px !important;
@@ -53,3 +52,9 @@
 a.bx--tabs__nav-link {
     width: 100% !important;
 } */
+
+
+.bx--tabs__nav {
+    flex-direction: column !important;
+    overflow: hidden !important;
+}
